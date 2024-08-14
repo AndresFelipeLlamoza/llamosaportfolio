@@ -1,11 +1,18 @@
 import React from 'react'
 import NavbarApp from '../components/navbar'
 import FooterApp from '../components/footer'
+import CardsData from '../hooks/cardsData'
+
 function Projects() {
   return (
-    <div>
+    <div className="projectsContainer">
       <NavbarApp/>
-      <p>Soy la pagina de la informacion de proyectos</p>
+      <div className='proyectTitle text-white'>
+        <h1>Mis proyectos desarrollados</h1>
+      </div>
+      <div className="proyectCardsCont">
+        <CardsData/>
+      </div>
       <FooterApp/>
     </div>
   )

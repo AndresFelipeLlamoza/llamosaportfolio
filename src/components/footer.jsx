@@ -11,7 +11,7 @@ export default function FooterApp() {
     <div className="footerContainer">
         <div>
             <p>Andres Felipe Llamoza</p>
-            <p>Front end developer</p>
+            <p>Full-stack developer</p>
         </div>
         <div>
             <p>Designed by Andres Felipe Llamosa</p>

@@ -1,4 +1,4 @@
-/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------navbar------------------------------------------------------*/
 
 @font-face {
   font-family: play;
@@ -41,19 +41,6 @@
   border: 5px red;
 }
 
-.footerContainer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background-color: #2b2d42;;
-  gap: 20vh;
-  padding: 20px;
-  font-family: play;
-  width: 100%;
-  color: white
-}
-
 .linkStyle {
   text-decoration: none;
   color: inherit;
@@ -76,49 +63,64 @@
   transition: all ease 0.5s;
   text-decoration: underline;
 }
+/* -----------------------------------------footer--------------------------------------------------------*/
 
-/* ------------------------------------------------------------------------------------------------------*/
-.firstSectionCont {
+.footerContainer {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  padding: 200px;
+  background-color: #2b2d42;;
+  gap: 20vh;
+  padding: 20px;
+  font-family: play;
+  width: 100%;
+  color: white;
+  bottom: 0;
+}
+
+/* -----------------------------------------Inicio--------------------------------------------------------*/
+.firstSectionCont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  height: 70vh;
   background-color: #2b2d42;
   color: white;
+  font-family: play;
 }
 .carouselCont{
-  width: 300px
+  display: flex;
+  justify-content: center;
+  width: 250px
 }
 .secondSectionCont{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 50px;
   align-items: center;
   padding: 50px;
   font-size: 17px;
-  background-color: #edf2f4 
+  background-color: #8d99ae 
 }
 .thirdSectionCont{
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 150px;
+  padding: 100px;
   background-color: #8d99ae
 }
 .homeText2{
   display: flex;
-  flex-direction: row
+  justify-content: center;
 }
-
-.imageStatic{
+.homeimg1{
+  width: 15vh;
   display: flex;
   justify-content: center;
-  padding: 20px;
-  position:absolute;
-  gap: 150;
-  transform: translateX(200)
-}
-.homeimg{
-  width: 15vh
+  gap: 25px
 }
 .homeText1{
   width: 50%
@@ -126,7 +128,118 @@
 .carousel-control-next .carousel-control-prev-icon{
   display: none
 }
+/* -------------------------------------------proyectos---------------------------------------------------*/
+.proyectTitle{
+  text-align: center;
+  padding: 40px;
+  font-family: play
+}
+.pCardTitle{
+  text-align: center;
+  font-family: play;
+}
+.cardsContainer{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 30px;
+  flex-wrap: wrap;
+  
+}
+.projectsContainer{
+  background-color: #8d99ae
+}
+.btn-custom{
+  transition: all .5s ease;
+  background-color: #ef233c !important;
+}
+.cardBtn{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.btn-custom:hover{
+  background-color: #ef233c;
+  transition: all ease .5s;
+  transform: scale(1.1);
+}
+.proyectCardStyle{
+  background-color: #2b2d42 !important;
+}
+.modalStyle{
+  background-color: #2b2d42 !important;
+}
+/* -------------------------------------------skills------------------------------------------------------*/
+.skillsTitle{
+  padding: 40px;
+  text-align: center;
+  font-family: play;
+}
+.skillCardsContainer{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 30px;
+  flex-wrap: wrap;
+  border: 1px #ef233c;
+}
+.skillCardStyle{
+  background-color: #2b2d42 !important;
+}
+.cardTitle{
+  text-align: center;
+  font-family: play
+}
+.skillContainer{
+  background-color: #8d99ae
+}
 
+/* -------------------------------------------slider------------------------------------------------------*/
+.custom-slider-img{
+  max-height: 600px;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+/* -------------------------------------------contact me------------------------------------------------------*/
+.contactTitle{
+  padding: 40px;
+  text-align: center;
+  font-family: play;
+}
+.contactBody{
+  background-color: #8d99ae;
+}
+.contactContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 75px;
+  padding: 30px;
+}
+.contactImgs{
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 100%
+}
+.socialMediaCont{
+  width: 60vh;
+  height: 60vh;
+  text-align: center;
+  background-color: #2b2d42;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px red solid;
+  border-radius: 10px
+
+}
+.linksSocialMedia{
+  text-decoration: none;
+  color: white
+}
 /* -------------------------------------------responsive--------------------------------------------------*/
 @media screen and (max-width: 991px){
     .navlinksContainer{
@@ -135,4 +248,26 @@
       align-items: center;
       padding: 20px
     }
+}
+@media screen and (max-width: 750px){
+  .footerContainer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column
+  }
+}
+@media screen and (max-width: 650px){
+  .secondSectionCont{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .homeText1{
+    width: 100%;
+  }
+  .homeText2{
+    width: 100%
+  }
 }
